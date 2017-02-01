@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+	<head>		
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="/img/sonimatec.ico">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 id="brand"></h1>
+				<nav id="main-nav"></nav>
+				<span id="toggle-menu" class="burger-icon"></span>
+			</div>
+		</header>
+
+		<main>
+
+			<h2>Contact form</h2>		
+
+			<form name="myContactForm" method="post" action="contact.php" 
+				class="box" id="contact-form">
+
+				<input type="hidden" name="subject" 
+					value="Contact from Flink demo site">
+				<input type="hidden" name="to" 
+					value="jaceldran@gmail.com">
+
+				<section class="inline">
+					<div class="control">
+						<label for="input-name">Name</label>
+						<input type="name" name="name" id="input-name">
+					</div>
+					<div class="control">
+						<label for="input-email">Email</label>
+						<input type="email" name="email" id="input-email">
+					</div>
+				</section>
+
+				<section class="stack">
+					<div class="control">
+						<label for="input-message">Message</label>
+						<textarea name="message" id="input-message"></textarea>
+					</div>
+				</section>
+
+				<section class="footer">
+					<button type="submit">Send</button>
+				</section>
+
+			</form>
+
+		</main>
+		
+		<footer>
+			<div id="footer-container" class="container"></div>
+		</footer>
+
+		<script type="text/javascript" src="./js/site.js"></script>	
+	</body>
+
+</html>

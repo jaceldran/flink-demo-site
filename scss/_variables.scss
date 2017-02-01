@@ -1,0 +1,49 @@
+
+//@import url('https://fonts.googleapis.com/css?family=Lato|Anton|Open+Sans|Montserrat');
+
+$font-brand: Georgia,serif;
+$font-default: Georgia,serif;
+
+
+$width-small: 768px;
+$width-medium: 900px;
+
+$padding-default: 15px;
+$gutter-default: 15px;
+$gutter-medium: 10px;
+
+// custom skin colors
+
+
+$hover-default: rgba(0, 0, 0, .025);
+$border-default: 1px solid #D49A6A;
+$border-rule: 1px dotted rgba(0,0,0,.3);
+$border-light: 1px solid #ffaaaa;
+
+
+// body
+$body-background: #ffd1aa;
+$body-color: #333;
+
+// header
+$header-background: #aa3939;
+$header-border-color: #801515;
+$header-brand-color: gainsboro;// #ffaaaa; //#550000;
+$header-link-background: transparent;
+$header-link-color: gainsboro; //#ffaaaa; //#550000;
+$header-link-active-background: rgba(255,255,255,.15); // #0d4d4d;// #801515;
+$header-link-active-color: gainsboro;// #ffaaaa;
+
+// box
+$box-background: #d49a6a;
+$box-color: #552700;
+$box-border-color: #804515; //$box-background;// #804515;
+
+// footer
+$footer-background: #222;// #d49a6a; //$header-background;// #550000;
+$footer-color: orange; //#ffaaaa;
+$footer-border-color: $box-border-color;// #801515;
+
+// headings
+$h1-color: #801515;
+$h2-color: #801515;

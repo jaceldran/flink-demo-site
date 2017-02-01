@@ -1,0 +1,40 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 100%;
+}
+
+caption {
+	font-size: 110%;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+	padding: $padding-default;
+}
+
+//tr:nth-of-type(odd) { // zebra 
+//  background: #d49a6a; 
+//}
+
+th, td {
+	text-align: left;
+	padding: $padding-default*.8 $padding-default*.5;
+	border-bottom: $border-rule;
+}
+
+th {
+	background-color: rgba(255,255,255,.3); 
+}
+
+th.wauto, td.wauto {
+	width: 1%;
+	white-space: nowrap;
+}
+
+@media (min-width: $width-medium) {
+
+	th {
+	//	padding-left: 0; // 
+	}
+
+}

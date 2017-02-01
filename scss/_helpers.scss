@@ -1,0 +1,109 @@
+
+
+.icon-brand {
+	background-image: url(http://cdn.zentric.es/img/favicon.ico);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	&::before {
+		content: "";
+		width: 16px;
+		display: inline-block;
+	}		
+}
+
+ul.social {
+	padding: $gutter-medium 0 0 0;
+	padding: 0;
+	& > li {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		& a {
+			color: #58859c;
+			display: block;			
+			padding: $gutter-medium;
+			text-decoration: none;
+			&.icon-brand {
+				 background-position: $gutter-medium 50%;
+			}
+			&:hover {
+				background-color:rgba(0,0,0,.15);
+			}
+		}
+	}
+}
+
+.burger-icon {
+	border: 0px solid $header-brand-color;
+	width: 32px;
+	height: 32px;
+	display: inline-blok;
+	margin: 0 4px;
+	padding: 7px 3px 3px 3px;
+	cursor: pointer;
+	&:hover::before {
+		border-color: goldenrod;
+	}
+	&:hover::after{
+		border-color: goldenrod;
+	}
+	&:before {
+		content: '';
+		display: block;
+		border: 1px solid $header-brand-color;
+		border-width: 5px 0;
+		height: 12px;		
+	}
+	&:after {
+		content: '';
+		display: block;
+		border: 1px solid $header-brand-color;
+		border-width: 5px 0 0 0;
+		margin-top: 2px;
+	}	
+}
+
+.inner {
+	padding: $gutter-default;
+}
+
+.inline {
+	display: inline;
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+.no-border {
+	border: none;
+}
+
+.slide-hide {
+	transform: translateX(-100%);
+	transition: all .25s;	
+}
+
+.slide-show {
+	transform: translateX(0%) !important;
+	transition: all .25s;	
+}
+
+.no-transition {
+	transition: none;
+}
+
+@media (min-width: 768px) {
+
+	.flex {
+		display: flex;
+		& > * {
+			flex-grow: 1;
+		}
+		& > .social a {
+			
+			
+		}
+	}
+
+}

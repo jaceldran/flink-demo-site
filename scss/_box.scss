@@ -1,0 +1,28 @@
+.box {	
+	margin: $gutter-default;
+}
+
+.box.default {
+	padding: $gutter-default;
+	margin: 0 $gutter-default;
+	border: 1px solid $box-border-color;
+	border-width: 0 0 6px 0;
+	background-color: $box-background;
+
+	& > p:first-child {
+		 margin-top: 0;
+	}
+
+	& > p:last-child {
+		 margin-bottom: 0;
+	}
+}
+
+@media (min-width: $width-medium+50px) {
+	.box {
+		margin: 0;
+		&.default {
+			margin: 0;
+		}
+	}
+}

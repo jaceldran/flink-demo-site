@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+}
+
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+// fix bug mozilla
+button::-moz-focus-inner { 
+	border: 0; 
+	padding: 0; 
+}
+
+body {
+	font-size: large;
+	font-family: $font-default;
+	background-color: $body-background;
+	color: $body-color;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+}
+
+a {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+acronym {
+	cursor: help;
+}
+
+code, kbd, .code {
+	font-family:  consolas,monospace;
+	font-size: 96%;	
+}
+
+
+pre {
+
+	border: $border-default;
+	margin: $gutter-default;
+	padding: $gutter-default;
+	white-space: pre-wrap;
+	overflow: auto;	
+
+	&.code {
+		background-color: #333;
+		border-color: #333;
+		color: #eee;
+	}
+}
+
+mark {
+	background-color: goldenrod;
+	color: $body-color;
+}
+
+// fix bug mozilla
+button::-moz-focus-inner { 
+	border: 0; 
+	padding: 0; 
+}
+
+// layout 
+
+body {
+	padding-top: 50px;
+	padding-bottom: 81px	
+}
+
+body, header, footer {
+	margin: 0 auto;
+}
+
+
+footer {
+
+	margin-top: $gutter-default*3;
+
+	&.hide {
+		display: none;
+	}	
+
+	& > .container {
+		background-color:$footer-background;
+		color: $footer-color;
+		padding: $gutter-default $gutter-default;
+		box-shadow: 0px 0px 10px rgba(0,0,0,.7);
+	}
+}
+
+@media (min-width: $width-medium) {
+
+	body, header, footer {
+		max-width: $width-medium;
+	}
+
+}

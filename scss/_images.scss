@@ -1,0 +1,62 @@
+
+
+
+	figure {
+
+		display: table;
+		position: relative;
+		z-index: -1;
+		margin: 0 auto;
+		border-collapse: collapse;
+		margin-top: $gutter-default;	
+		
+		& img {						
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+		border: 1px solid #aaa;
+		box-shadow: 0 0 10px #666;
+		}
+
+		& figcaption {
+			display: block;
+			//background-color: rgba(255,255,255,.5);
+			//color: $header-background;
+			//font-weight: bold;
+			//font-size: 90%;
+			text-transform: uppercase;
+			color: #666;
+			padding: $gutter-medium;
+			text-align: center;
+			&:before {
+				content: "~ ";
+				font-weight: bold;
+			}
+			&:after {
+				content: " ~";
+				font-weight: bold;
+			}
+		}
+
+	}
+
+
+	/*position: relative;
+	z-index: -1;
+
+	& > img {
+		max-width: 100%;
+	}
+
+	& > figcaption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0,0,0,.5);
+		color: #fff;
+		padding: $gutter-default;
+		font-size: 90%;
+	}*/
+
+

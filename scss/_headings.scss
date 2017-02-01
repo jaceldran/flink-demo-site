@@ -1,0 +1,23 @@
+
+h1 {
+	font-size: 175%;
+	padding: 0 $gutter-default;
+	color: $h1-color;
+}
+h2 {
+	font-size: 150%;
+	padding: 0 $gutter-default;
+	margin: $gutter-default 0;
+	color: $h2-color;
+}
+h3 {
+	font-size: 120%;
+	padding: 0 $gutter-default;
+	margin: $gutter-default 0;
+}
+
+@media (min-width: $width-medium) {
+	h1:not(#brand), h2, h3 {
+		padding: 0;
+	}
+}

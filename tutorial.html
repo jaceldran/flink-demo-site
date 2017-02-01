@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+	<head>		
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="/img/sonimatec.ico">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 id="brand"></h1>
+				<nav id="main-nav"></nav>
+				<span id="toggle-menu" class="burger-icon"></span>
+			</div>
+		</header>
+
+		<main>
+			<h2>Hello, world</h2>
+
+			<div class="box default">
+				<p>
+					In this tutorial we'll build a simple
+					"Hello, world" module  to show and explain
+					each <span class="brand"></span>'s feature.					
+				</p>
+				<!--ol>
+					<li>.</li>					
+					<li>Including a helloWorld module in <span class="brand"></span>.</li>
+					<li>Coding helloWorld main action.</li>
+					<li>Writing content in main panel.</li>
+					<li>Using templates.</li>
+					<li>Adding stylesheets.</li>
+					<li>Multilang support</li>
+				</ol-->
+			</div>
+			
+			<h2>Loading <span class="brand"></span> in host page</h2>
+			<div class="box">
+				<p>
+					First of all we need a page to include <span class="brand"></span>. 
+					So, create a blank html file.
+					You don't need to download <span class="brand"></span> 
+					if you don't want to. You can link to CDN:
+				</p>
+<code><pre>
+	&lt;script src="http://cdn.zentric.es/flink/beta/dist"&gt;&lt;script&gt;
+&lt;/body&gt;
+</code></pre>
+			</div>
+			
+			<h2>Creating module</h2>
+			<div class="box">
+				<p>
+					The next step is create the module file which contains our code.
+					To make things as easy as possible, <span class="brand"></span>
+					provides a BLANK module template to start with. 
+					Download and rename as <kbd>module.Hello.js</kbd>, then edit and do next:
+				</p>
+				<dl>
+					
+					<dt><b>Set <mark><kbd>moduleKEY</kbd></mark></b>.</dt>
+					<dd>						
+						Find the line that sets the var named <kbd>moduleKEY</kbd> 
+						and assign the value  <kbd>HelloWorld</kbd>. This is 
+						the module identifier which will be registered 
+						as <kbd>Flink.HelloWorld</kbd>, so it must be unique 
+						along the <span class="brand"></span> namespace.
+<pre><code>var moduleKEY = "HelloWorld";</code></pre>
+					</dd>
+
+					<dt><b>Code the <mark><kbd>call</kbd></mark> method.</b></dt>
+					<dd>
+						Find the function "call" and add some awesome and 
+						original executable code:
+<code><pre>
+function call(method, args)
+{
+	alert("Hellow, world");
+}
+</pre></code>
+					</dd>
+				</dl>
+
+				<p>
+					That's all we need. Now we have an operative module
+					ready to work.
+				</p>
+
+			</div>
+
+			<h2>Loading our module in <span class="brand"></span></h2>
+			<div class="box">
+				
+			</div>
+
+			<h2>Interacting with frame</h2>
+			<div class="box">
+				
+			</div>
+
+			<h2>Using templates</h2>
+			<div class="box">
+				
+			</div>			
+
+			<h2>Using with stylesheets</h2>
+			<div class="box">
+				
+			</div>			
+
+			<h2>Multilang support</h3>
+			<div class="box">
+				
+			</div>			
+
+		</main>
+		
+		<footer>
+			<div id="footer-container" class="container"></div>
+		</footer>
+
+		<script type="text/javascript" src="./js/site.js"></script>
+	</body>
+
+</html>

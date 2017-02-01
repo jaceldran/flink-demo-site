@@ -1,0 +1,70 @@
+
+form {
+
+	& label {
+		display: block;
+		font-weight: bold;
+		margin: $gutter-medium/2 0;
+	}
+
+	& input:not([type=checkbox]), select, textarea {
+		cursor: pointer;
+		border: 1px solid rgba(0,0,0,.15);
+		padding: 10px;
+		width: 100%;
+	}
+
+	& button, .button {
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;	
+		width: auto;
+		padding: 0 35px;
+		line-height: 50px;
+		border: 1px solid rgba(0,0,0,.15);
+	}
+
+	& > section {
+		&.footer {
+			margin: $gutter-default 0;
+		}
+	}
+
+}
+
+
+@media (min-width: $width-small) {
+	form {
+		& > section {
+			margin: $gutter-default;
+			&.inline {				
+				display: flex;
+				& .control {
+					flex-grow: 1;					
+					margin-right: 10px;
+					&:last-child {
+						margin-right: 0;
+					}
+				}			
+			}
+			&.footer {
+				margin: $gutter-default;
+			}
+		}
+	}
+}  
+
+@media (min-width: $width-medium) {
+
+	form {
+		& > section {
+			margin: $gutter-default 0;
+			&.footer {
+				margin: $gutter-default 0;
+			}
+		}
+	}
+
+}
+
